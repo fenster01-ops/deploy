@@ -1,0 +1,46 @@
+:root {
+  --neutral-color-10: #fff;
+  --neutral-color-20: #f5f5f5;
+  --neutral-color-60: #18181d;
+  --neutral-color-100: #1d1e25;
+  --neutral-color-120: #828282;
+  --neutral-color-130: #d9d9d9;
+  --neutral-color-140: #000;
+  --neutral-color-160: #1d1e25;
+  --neutral-color-180: #7e8492;
+  --neutral-color-190: #101010;
+
+  // primary colors
+  --primary-colors-50: #4e7ddb;
+
+  // logo-color
+  --logo-color: #101010;
+  --logo-color-circle: #101010;
+
+  // container
+  --container-padding: 12%;
+  --container-width: 1200px;
+
+  // transition
+  --transition: 0.2s ease-in-out;
+
+  // z-index
+  --z-index-0: -1;
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-3: 3;
+  --z-index-4: 4;
+
+  // overview
+  --overview-bg: #1d1e25;
+}
+
+body[data-theme='Dark'] {
+  --neutral-color-10: #1d1e25;
+  --neutral-color-100: #fff;
+  --neutral-color-150: #fff;
+  --neutral-color-190: #fff;
+  --overview-bg: #18181d;
+  --logo-color: #fff;
+  --logo-color-circle: #343542;
+}

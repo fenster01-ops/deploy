@@ -1,0 +1,14 @@
+@import './mixins/';
+@import './base';
+@import './globals';
+
+// componemants
+@import './componements/header';
+@import './componements/home/hero';
+@import './componements/home/overview';
+@import './componements/home/features';
+@import './componements/home/strench';
+@import './componements/partners';
+@import './componements/home/insight';
+@import './componements/home/testimonials';
+@import './componements/footer';

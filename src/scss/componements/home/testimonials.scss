@@ -1,0 +1,122 @@
+.testimonials {
+  padding: 69px 0 160px;
+
+  &__head {
+    @include flex-justify-between;
+    margin-bottom: 48px;
+
+    @include small-tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &-title {
+      max-width: 530px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-190);
+
+      @include small-tablet {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-text {
+      max-width: 376px;
+      font-weight: 500;
+      line-height: 178%;
+      color: var(--neutral-color-180);
+    }
+  }
+
+  &__rating {
+    @include flex-align-center;
+    margin-bottom: 19px;
+
+    &-num {
+      margin-left: 8px;
+      font-weight: 500;
+      line-height: 162%;
+      color: var(--neutral-color-100);
+    }
+  }
+
+  &__slider-wrapper {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 115px;
+      height: 77px;
+      background: url('../assets/icons/icon.svg');
+    }
+  }
+
+  &__slider {
+    max-width: 886px;
+  }
+
+  &__comment {
+    &-text {
+      margin-bottom: 40px;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+
+      @include mobile {
+        font-size: 32px;
+      }
+
+      @include small-mobile {
+        font-size: 27px;
+      }
+    }
+
+    &-author {
+      @include flex-align-center;
+
+      & > img {
+        margin-right: 24px;
+      }
+
+      &-name {
+        font-weight: 600;
+        line-height: 144%;
+        color: var(--neutral-color-100);
+      }
+
+      &-professions {
+        font-weight: 500;
+        line-height: 162%;
+        color: var(--neutral-color-180);
+      }
+    }
+  }
+
+  &__btns {
+    position: relative;
+
+    @include flex-align-center;
+    z-index: 2;
+    gap: 16px;
+    justify-content: flex-end;
+    transform: translateY(-53px);
+
+    @include average-mobile {
+      margin-top: 10px;
+      transform: translateY(0);
+    }
+  }
+
+  &__btn {
+    border: 1px solid #ced1d8;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    &:active {
+      background: #18181d;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-all-align {
+  display: flex;
+}
+
+@mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-justify-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-padding-header {
+  padding: 0 50px;
+}
