@@ -1,0 +1,9 @@
+@import './mixins/';
+@import './base';
+@import './globals';
+
+// componemants
+@import './componements/header';
+@import './componements/pricing/hero';
+@import './componements/pricing/faq';
+@import './componements/footer';

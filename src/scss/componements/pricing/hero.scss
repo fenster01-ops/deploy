@@ -1,0 +1,218 @@
+.hero {
+    padding: 90px 0 134px;
+
+    &__head {
+        text-align: center;
+    }
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 24px;
+        border-radius: 16px;
+        padding: 4px 12px;
+        font-weight: 600;
+        line-height: 150%;
+        text-align: center;
+        color: #1463ff;
+        background: #1463ff1a;
+    }
+
+    &__descr {
+        margin-bottom: 56px;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        color: var(--neutral-color-100);
+    }
+
+    &__switcher {
+        position: relative;
+        border-radius: 12px;
+        width: 44px;
+        height: 24px;
+        background-color: var(--neutral-color-130);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            display: inline-block;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: #1463ff;
+            opacity: 0.6;
+            transition:
+                left var(--transition),
+                opacity var(--transition);
+        }
+
+        &-wrapper {
+            display: inline-flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-checkbox {
+            appearance: none;
+        }
+
+        &:has(&-checkbox:checked) {
+            &::before {
+                left: 22px;
+                opacity: 1;
+            }
+        }
+
+        &-text {
+            font-weight: 500;
+            line-height: 162%;
+            color: #7e8492;
+        }
+    }
+
+    &__plans {
+        @include flex-all-center;
+        gap: 32px;
+        padding-bottom: 40px;
+        margin-top: 186px;
+
+        &-icon {
+            @include flex-all-center;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            background: var(--neutral-color-20);
+
+            &--popular {
+                background: #1463ff;
+
+            }
+        }
+
+        &-title {
+            margin-top: 16px;
+            font-weight: 600;
+            line-height: 142%;
+            color: var(--neutral-color-100);
+
+            &--popular {
+                color: #fff;
+            }
+        }
+
+        &-descr {
+            margin-top: 8px;
+            max-width: 330px;
+            font-weight: 500;
+            line-height: 162%;
+            color: var(--neutral-color-180);
+        }
+
+        &-price {
+            margin-top: 24px;
+            font-weight: 600;
+            line-height: 120%;
+            letter-spacing: -0.04em;
+            color: var(--neutral-color-100);
+
+            &--popular {
+                color: #fff;
+            }
+
+            &-text {
+                font-weight: 500;
+                line-height: 162%;
+                color: var(--neutral-color-180);
+            }
+        }
+
+        &-list {
+            margin-top: 16px;
+            margin-bottom: 40px;
+
+            &-title {
+                margin-top: 24px;
+                font-weight: 700;
+                line-height: 150%;
+                color: var(--neutral-color-100);
+
+                &--popular {
+                    color: #fff;
+                }
+            }
+        }
+
+        &-item {
+            font-weight: 500;
+            line-height: 162%;
+            color: var(--neutral-color-100);
+
+            &--popular {
+                color: #fff;
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                background: url('../assets/icons/price-tic-icon.svg');
+                transform: translateY(2px);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            &--inaccess {
+                text-decoration: line-through;
+                color: #7e8492;
+
+                &::before {
+                    background: url('../assets/icons/price-tic-icon-dark.png');
+                }
+            }
+        }
+
+        &-btn-wrapper {
+            margin: auto;
+            border: 1px solid #ced1d8;
+            border-radius: 100px;
+            padding: 16px 32px;
+            width: 160px;
+            height: 56px;
+            background: #fff;
+
+            &-btn {
+                font-weight: 600;
+                line-height: 150%;
+                text-align: center;
+                color: #1d1e25;
+            }
+        }
+    }
+
+    &__item {
+        border: 1px solid #ededed;
+        border-radius: 16px;
+        padding: 40px 24px;
+        width: 378px;
+        height: 801px;
+
+        &--popular {
+            position: relative;
+            top: -65px;
+            border: 1px solid #1463ff;
+            border-radius: 16px;
+            padding: 40px 24px;
+            width: 378px;
+            height: 789px;
+            box-shadow: 0 16px 24px 0 rgba(30, 30, 30, 0.08);
+            background: #161a34;
+        }
+    }
+}
