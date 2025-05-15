@@ -1,0 +1,91 @@
+.faq {
+    padding: 82px 0 160px;
+
+    &__title {
+        margin-bottom: 24px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: var(--neutral-color-100);
+    }
+
+    &__desc {
+        margin-bottom: 80px;
+        font-weight: 500;
+        line-height: 178%;
+        text-align: center;
+        color: #7e8492;
+    }
+
+    &__accordion {
+        border-bottom: 1px solid #ededed;
+        padding-bottom: 32px;
+        text-align: left;
+        transition: var(--transition);
+
+        &:not(:last-child) {
+            margin-bottom: 56px;
+        }
+
+        &-title {
+            font-weight: 600;
+            line-height: 150%;
+            color: var(--neutral-color-100);
+        }
+
+        &-icon {
+            position: relative;
+            width: 24px;
+            height: 24px;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                border-radius: 6px;
+                width: 18px;
+                height: 3px;
+                background-color: var(--neutral-color-100);
+            }
+
+            &::after {
+                transform: rotate(90deg);
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                display: inline-block;
+                border-radius: 6px;
+                width: 18px;
+                height: 3px;
+                background-color: var(--neutral-color-100);
+            }
+        }
+
+        &[open] &-icon::after {
+            display: none;
+        }
+
+        &-text {
+            margin-top: 16px;
+            max-width: 641px;
+            font-weight: 500;
+            line-height: 178%;
+            color: #7e8492;
+        }
+
+        &-control {
+            @include flex-justify-between;
+            list-style: none;
+            cursor: pointer;
+
+            &::-webkit-detalis-marker {
+                display: none;
+            }
+        }
+    }
+}

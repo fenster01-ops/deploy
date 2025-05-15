@@ -76,8 +76,8 @@
     &__plans {
         @include flex-all-center;
         gap: 32px;
-        padding-bottom: 40px;
         margin-top: 186px;
+        padding-bottom: 40px;
 
         &-icon {
             @include flex-all-center;
@@ -211,7 +211,7 @@
             padding: 40px 24px;
             width: 378px;
             height: 789px;
-            box-shadow: 0 16px 24px 0 rgba(30, 30, 30, 0.08);
+            box-shadow: 0 16px 24px 0 #1e1e1e14;
             background: #161a34;
         }
     }
