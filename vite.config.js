@@ -5,9 +5,11 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 
 export default defineConfig({
     root: './src',
+    base: '/deploy/',
     server: {
         port: 3000,
     },
+    publicDir: './src/assets',
     build: {
         outDir: '../dist',
         emptyOutDir: true,
@@ -15,7 +17,7 @@ export default defineConfig({
             input: {
                 main: './src/index.html',
                 pricing: './src/pricing.html',
-                pricing: './src/contact.html',
+                contact: './src/contact.html',
             },
         },
     },
