@@ -11,18 +11,24 @@ export const useActiveSlider = () => {
 };
 
 export const useClauseSlider = () => {
-  new Swiper('.clause__slider', {
-    modules: [Navigation, Autoplay],
-    slidesPerView: 3, 
-    spaceBetween: 33,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      prevEl: '.clause__btn--prev',
-      nextEl: '.clause__btn--next',
-    },
-  });
+    new Swiper('.clause__slider', {
+        modules: [Navigation, Autoplay],
+        slidesPerView: 3,
+        spaceBetween: 33,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            1180: {
+                slidesPerView: 2,
+                spaceBetween: 1,
+            },
+        },
+        navigation: {
+            prevEl: '.clause__btn--prev',
+            nextEl: '.clause__btn--next',
+        },
+    });
 };
