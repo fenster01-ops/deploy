@@ -20,12 +20,6 @@ export const useClauseSlider = () => {
             delay: 4000,
             disableOnInteraction: false,
         },
-        breakpoints: {
-            1180: {
-                slidesPerView: 2,
-                spaceBetween: 1,
-            },
-        },
         navigation: {
             prevEl: '.clause__btn--prev',
             nextEl: '.clause__btn--next',
