@@ -1,7 +1,9 @@
 .clause {
     padding: 160px 0;
 
-    
+    &__head {
+        position: absolute;
+    }
 
     &__title {
         max-width: 198px;
@@ -29,6 +31,7 @@
         position: relative;
         gap: 16px;
         justify-content: center;
+        margin-bottom: 200px;
     }
 
     &__btn {
@@ -37,7 +40,7 @@
         width: 50px;
         height: 50px;
 
-        &:active {
+        &:hover {
             background: #18181d;
         }
     }
