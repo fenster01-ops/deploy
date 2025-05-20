@@ -5,6 +5,7 @@
   left: 0;
   z-index: var(--z-index-3);
   padding: 20px 0 22px;
+  background: var(--neutral-color-10);
 
   @include mobile {
     padding: 22px 0 18px;
